@@ -56,7 +56,7 @@ button{font-family:inherit}
 /* DRAFT / DUMMY ribbon */
 .draft-banner{position:fixed;top:0;left:0;right:0;z-index:120;background:repeating-linear-gradient(45deg,#3a1c15,#3a1c15 14px,#4a2419 14px,#4a2419 28px);color:#fff;text-align:center;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;line-height:1.4}
 .draft-banner b{color:var(--ochre-light)}
-body{padding-top:34px}
+body{padding-top:0}
 
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--brick);background:rgba(171,69,49,.07);padding:7px 14px;border-radius:100px;border:1px solid var(--line)}
 .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--ochre);box-shadow:0 0 0 4px rgba(201,148,58,.2)}
@@ -88,14 +88,14 @@ body{padding-top:34px}
 .site-nav .logo-ph{width:64px;height:64px}
 
 /* ============ APP BAR ============ */
-.appbar{display:none;position:fixed;top:34px;left:0;right:0;z-index:80;height:var(--appbar-h);align-items:center;justify-content:space-between;padding:0 16px;background:rgba(255,255,255,.92);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.appbar{display:none;position:fixed;top:0;left:0;right:0;z-index:80;height:var(--appbar-h);align-items:center;justify-content:space-between;padding:0 16px;background:rgba(255,255,255,.92);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
 .appbar .logo{width:70px;height:70px}
 .appbar .bt b{font-size:.98rem}
 .appbar .bt span{font-size:.55rem}
 .appbar .ab-cta{font-size:.8rem;font-weight:800;color:#fff;background:var(--brick);padding:9px 16px;border-radius:100px}
 
 /* ============ SITE NAV ============ */
-.site-nav{display:none;position:sticky;top:34px;z-index:80;backdrop-filter:saturate(160%) blur(14px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.site-nav{display:none;position:sticky;top:0;z-index:80;backdrop-filter:saturate(160%) blur(14px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 .site-nav.scrolled{box-shadow:0 10px 30px -20px rgba(36,26,22,.3)}
 .site-nav .inner{display:flex;align-items:center;justify-content:space-between;height:74px}
 .site-nav .brand-line{cursor:pointer}
@@ -322,7 +322,7 @@ body.app .screen{background:transparent}
   .countdown{margin-left:0;margin-right:0}
   .gallery{grid-template-columns:repeat(4,1fr)}
   .faq-wrap{flex-direction:row;gap:30px;align-items:flex-start}
-  .faq-cats{flex-direction:column;overflow:visible;width:280px;flex:none;position:sticky;top:130px;padding-bottom:0}
+  .faq-cats{flex-direction:column;overflow:visible;width:280px;flex:none;position:sticky;top:96px;padding-bottom:0}
   .faq-cat{width:100%;justify-content:space-between;border-radius:14px;padding:14px 16px;font-size:.95rem}
   .site-foot .fg{padding:0}
 }
@@ -330,8 +330,6 @@ body.app .screen{background:transparent}
 </style>
 </head>
 <body class="app">
-
-
 
 
 <script>document.body.className=window.matchMedia('(min-width:960px)').matches?'site':'app';</script>
@@ -342,7 +340,7 @@ body.app .screen{background:transparent}
     <span class="logo-wrap"><img class="logo" src="images/IITK Logo (1).png" alt="IIT Kanpur" /></span>
     <span class="bt"><b>45-Year Reunion</b><span>Class of 1981</span></span>
   </div>
-  <a class="ab-cta" href="#" data-reg>Register</a>
+  <a class="ab-cta" href="https://almaworld.iitk.ac.in/reunion-survey/RjSK/40th-Reunion%20Class%20of%201981/" target="_blank" rel="noopener">Register</a>
 </header>
 
 <!-- ===== SITE NAV ===== -->
@@ -360,7 +358,7 @@ body.app .screen{background:transparent}
       <a data-go="travel">Travel &amp; Stay</a>
       <a data-go="reunion">Reunion Team</a>
       <a data-go="faq">FAQs</a>
-      <a class="nav-cta" href="#" data-reg>Register</a>
+      <a class="nav-cta" href="https://almaworld.iitk.ac.in/reunion-survey/RjSK/40th-Reunion%20Class%20of%201981/" target="_blank" rel="noopener">Register</a>
     </div>
   </div>
 </nav>
@@ -384,7 +382,7 @@ body.app .screen{background:transparent}
             <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>IIT Kanpur Campus</span>
           </div>
           <div class="cta reveal d2">
-            <a class="btn btn-primary" href="#" data-reg>Register Now</a>
+            <a class="btn btn-primary" href="https://almaworld.iitk.ac.in/reunion-survey/RjSK/40th-Reunion%20Class%20of%201981/" target="_blank" rel="noopener">Register Now</a>
             <button class="btn btn-ghost" data-go="message">Read Batch Message</button>
           </div>
           <div class="countdown reveal d3" id="countdown">
@@ -427,7 +425,7 @@ body.app .screen{background:transparent}
         As we gather once again at IIT Kanpur, let us relive the memories, create new ones with our families, and celebrate not just where we studied - but the lifelong community we became.
         
        </p>
-      
+     
       <p class="pull serif" style="font-size:1.22rem"> Here's to 45 years of friendship, memories, and the IITK spirit. 
         Welcome back home.</p>
     </div>
@@ -497,8 +495,10 @@ body.app .screen{background:transparent}
         </div>
       </div>
       <div class="td-r">
-        <a class="btn btn-wa" href="https://wa.me/918187926962?text=Hi%2C%20I%20need%20travel%20help%20for%20the%20reunion" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/></svg>
+        <a class="btn btn-wa" href="https://wa.me/918187926962?text=Hi%2C%20I%20need%20travel%20help%20for%20the%20Class%20of%201981%20reunion." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/>
+          </svg>
           WhatsApp Travel Support
         </a>
       </div>
@@ -515,13 +515,13 @@ body.app .screen{background:transparent}
 <!-- ============ GALLERY + REUNION COORDINATORS ============ -->
 <section class="screen" id="reunion">
   <div class="wrap screen-inner">
-    <div class="sec-head reveal"><span class="eyebrow"><span class="dot"></span>Then &amp; Now</span><h2>Memories in the <span class="gr">making</span></h2><p>A glimpse of the batch — more photos to be added as they're shared.</p></div>
+    <div class="sec-head reveal"><span class="eyebrow"><span class="dot"></span>Then &amp; Now</span><h2>Memories in the <span class="gr">making</span></h2><p>Batch photos to be added once shared.</p></div>
     <div class="gallery">
       <div class="ph big reveal"><img src="images/Banner 1981.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
+      <div class="ph reveal d1"><img src="images/IMG_2514.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
+      <div class="ph reveal d2"><img src="images/IMG_2707.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
+      <div class="ph reveal"><img src="images/IMG_2875.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
       <div class="ph reveal d1"><img src="images/_MG_3768.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
-      <div class="ph reveal d2"><img src="images/IMG_2514.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
-      <div class="ph reveal"><img src="images/IMG_2707.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
-      <div class="ph reveal d1"><img src="images/IMG_2875.JPG" alt="Class of 1981 memory" loading="lazy" /></div>
     </div>
     <p class="gal-note">📸 Have photos from 1976–1981? Send them to the coordinators to feature here.</p>
 
@@ -532,17 +532,37 @@ body.app .screen{background:transparent}
         <h3>Sakshi Gulati</h3>
         <div class="role">Reunion Coordinator</div>
         <div class="links">
-          <a class="l-wa" href="https://wa.me/919936357737?text=Hi%20Sakshi%2C%20I%20have%20a%20query%20regarding%20the%20Class%20of%201981%20Reunion.%20Could%20you%20please%20help%20me%3F" target="_blank" rel="noopener" aria-label="WhatsApp Sakshi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/></svg></a>
-          <a class="l-mail" href="mailto:gsakshi@iitkdf.org" aria-label="Email Sakshi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a class="l-wa" href="https://wa.me/919936357737?text=Hi%20Sakshi%2C%20I%20have%20a%20query%20regarding%20the%20Class%20of%201981%20Reunion.%20Could%20you%20please%20help%20me%3F" target="_blank" rel="noopener" aria-label="WhatsApp Sakshi">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/>
+            </svg>
+          </a>
+          
+          <a class="l-mail" href="mailto:gsakshi@iitkdf.org" aria-label="Email Sakshi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3 7l9 6 9-6"/>
+            </svg>
+          </a>
         </div>
       </div>
       <div class="person reveal d2">
-        <div class="avatar"><img src="images/pallavi.jpeg" alt="Pallavi Awasthi" /></div>
+        <div class="avatar"><img src="images/pallawi.jpeg" alt="Pallavi Awasthi" /></div>
         <h3>Pallavi Awasthi</h3>
         <div class="role">Reunion Coordinator</div>
         <div class="links">
-          <a class="l-wa" href="https://wa.me/917518427164?text=Hi%20Pallavi%2C%20I%20have%20a%20query%20regarding%20the%20Class%20of%201981%20Reunion.%20Could%20you%20please%20help%20me%3F" target="_blank" rel="noopener" aria-label="WhatsApp Pallavi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/></svg></a>
-          <a class="l-mail" href="mailto:pallavi.awasthi@iitkdf.org" aria-label="Email Pallavi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a class="l-wa" href="https://wa.me/917518427164?text=Hi%20Pallavi%2C%20I%20have%20a%20query%20regarding%20the%20Class%20of%201981%20Reunion.%20Could%20you%20please%20help%20me%3F" target="_blank" rel="noopener" aria-label="WhatsApp Pallavi">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.7 2.5-2.6-.7-.5.3A8.2 8.2 0 1 1 12 3.8m-3 3.4c-.2 0-.5 0-.7.4s-.9.9-.9 2.1.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7s1.5-.6 1.8-1.2c.2-.6.2-1.1.1-1.2l-.6-.3c-.3-.2-1.5-.8-1.7-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5c0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4z"/>
+            </svg>
+          </a>
+          
+          <a class="l-mail" href="mailto:pallavi.awasthi@iitkdf.org" aria-label="Email Pallavi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3 7l9 6 9-6"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -619,7 +639,7 @@ body.app .screen{background:transparent}
     <div class="register reveal">
       <h2>Welcome back to campus</h2>
       <p>Register now and let's relive it together.</p>
-      <a class="btn btn-gold" href="#" data-reg>Register for the Reunion →</a>
+      <a class="btn btn-gold" href="https://almaworld.iitk.ac.in/reunion-survey/RjSK/40th-Reunion%20Class%20of%201981/" target="_blank" rel="noopener">Register for the Reunion →</a>
     </div>
   </div>
 </section>
@@ -658,7 +678,7 @@ body.app .screen{background:transparent}
       <h4>Reunion</h4>
       <a data-go="reunion">Reunion Team</a>
       <a data-go="faq">FAQs</a>
-      <a href="#" data-reg>Register</a>
+      <a href="https://almaworld.iitk.ac.in/reunion-survey/RjSK/40th-Reunion%20Class%20of%201981/" target="_blank" rel="noopener">Register</a>
     </div>
   </div>
   <div class="wrap fb">
